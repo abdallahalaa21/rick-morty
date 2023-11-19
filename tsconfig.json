@@ -24,7 +24,8 @@
     "paths": {
       "@images/*": ["./src/assets/images/*"],
       "@colors": ["./src/styles/colors.ts"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@graphql/*": ["./src/graphql/*"]
     }
   },
   "include": ["src"],

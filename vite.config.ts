@@ -9,6 +9,7 @@ export default defineConfig({
       '@images': path.resolve(__dirname, './src/assets/images'),
       '@colors': path.resolve(__dirname, './src/constant/colors'),
       '@components': path.resolve(__dirname, './src/components'),
+      '@graphql': path.resolve(__dirname, './src/graphql'),
     },
   },
   plugins: [react()],

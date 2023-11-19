@@ -1,14 +1,14 @@
-import React from 'react';
 import styles from './styles.module.css';
 import rick from '@images/rickShip.png';
+import { Link } from 'react-router-dom';
 
-type Props = {};
-
-const HomePage = (props: Props) => {
+const HomePage = () => {
   return (
     <div className={styles.container}>
       HomePage
-      <img src={rick} alt='' className={styles.ship} />
+      <Link to={'/characters'}>
+        <img src={rick} alt='rick ship' className={styles.ship} />
+      </Link>
     </div>
   );
 };

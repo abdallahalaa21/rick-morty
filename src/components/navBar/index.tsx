@@ -26,7 +26,7 @@ const NavBar = () => {
     >
       <Toolbar className={styles.container}>
         <Link to='/'>
-          <img src={logo} alt='logo' />
+          <img src={logo} alt='logo' className={styles.logo} />
         </Link>
         <Stack direction='row' spacing={2}>
           {navItems.map((item) => (

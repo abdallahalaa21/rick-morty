@@ -12,3 +12,12 @@
 .link:hover {
   scale: 1.1;
 }
+
+.logo {
+  @media only screen and (max-width: 768px) {
+    width: 200px;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 150px;
+  }
+}

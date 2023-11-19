@@ -9,8 +9,9 @@ import {
   Grid,
   Typography,
 } from '@mui/material';
-import Loader from '@components/loader';
 
+import Loader from '@components/loader';
+import CharacterModal from '@components/characterModal';
 import getCharacters from '../../graphql/getCharacters.gql';
 
 const Characters = () => {
@@ -43,7 +44,11 @@ const Characters = () => {
   const selectCharacter = useCallback((id) => {
     setSelected(id);
   }, []);
-  console.log(selected);
+
+  const handleClose = useCallback(() => {
+    setSelected('');
+  }, []);
+
   useEffect(() => {
     fetchMore({
       variables: {
@@ -103,6 +108,11 @@ const Characters = () => {
         ))}
       </Grid>
       {loading && data?.characters?.results?.length ? <Loader multi /> : ''}
+      <CharacterModal
+        open={!!selected}
+        handleClose={handleClose}
+        id={selected}
+      />
     </Container>
   );
 };

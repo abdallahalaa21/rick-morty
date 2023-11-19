@@ -1,6 +1,6 @@
-import gql from 'graphql-tag';
+import { gql } from '../__generated__/gql';
 
-const getCharacters = gql`
+const getCharacters = gql(`
   query getCharacters($page: Int) {
     characters(page: $page) {
       info {
@@ -13,6 +13,6 @@ const getCharacters = gql`
       }
     }
   }
-`;
+`);
 
 export default getCharacters;
