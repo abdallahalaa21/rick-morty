@@ -75,7 +75,7 @@ const Characters = () => {
   if (error) return <p>Error :</p>;
 
   return (
-    <Container style={{ fontSize: '100px', color: 'red', marginTop: '140px' }}>
+    <Container style={{ fontSize: '100px', marginTop: '140px' }}>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
