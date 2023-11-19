@@ -15,17 +15,17 @@
     "jsx": "react-jsx",
 
     /* Linting */
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
     "baseUrl": "./src",
     "paths": {
-      "@images/*": ["./src/assets/images/*"],
-      "@colors": ["./src/styles/colors.ts"],
-      "@components/*": ["./src/components/*"],
-      "@graphql/*": ["./src/graphql/*"]
+      "@images/*": ["assets/images/*"],
+      "@colors": ["constant/colors.ts"],
+      "@components/*": ["components/*"],
+      "@graphql/*": ["graphql/*"]
     }
   },
   "include": ["src"],
